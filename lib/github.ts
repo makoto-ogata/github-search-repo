@@ -1,12 +1,14 @@
 interface GitHubRepo {
 	id: number;
 	name: string;
+	html_url: string;
 	full_name: string;
 	description: string | null;
 	language: string | null;
 	stargazers_count: number;
 	owner: {
 		login: string;
+		html_url: string;
 		avatar_url: string;
 	};
 }
