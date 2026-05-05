@@ -1,4 +1,4 @@
-interface GitHubRepo {
+export interface GitHubRepo {
 	id: number;
 	name: string;
 	html_url: string;
@@ -13,7 +13,7 @@ interface GitHubRepo {
 	};
 }
 
-interface GitHubRepoDetail extends GitHubRepo {
+export interface GitHubRepoDetail extends GitHubRepo {
 	subscribers_count: number;
 	forks_count: number;
 	open_issues_count: number;
