@@ -12,6 +12,7 @@ export default async function Home({ searchParams }: Props) {
 
 	return (
 		<main className='my-12 mx-auto w-full max-w-3xl px-4'>
+			<h1 className='sr-only'>GitHub Repository Search</h1>
 			<SearchForm defaultValue={q ?? ""} />
 			{q && repos.length > 0 && <RepoList repos={repos} />}
 			{q && repos.length === 0 && (
