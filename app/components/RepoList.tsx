@@ -25,7 +25,7 @@ export const RepoList = ({ repos }: Props) => {
 						<div className='grow'>
 							{repo.full_name}
 							<p className='text-sm text-gray-500 mt-1'>{repo.description}</p>
-							<div className='text-sm text-gray-400 mt-1'>
+							<div className='text-sm text-gray-600 mt-1'>
 								{repo.language && <span className='mr-4'>{repo.language}</span>}
 								<span>⭐ {repo.stargazers_count.toLocaleString()}</span>
 							</div>
